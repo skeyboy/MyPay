@@ -8,5 +8,5 @@
 #import <Foundation/Foundation.h>
 
 @interface MyPay : NSObject
-
+- (void) open:(NSString *) url;
 @end

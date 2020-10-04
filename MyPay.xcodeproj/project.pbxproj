@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BFF85E72252A0C1A00F04572 /* MyPay.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF85E71252A0C1A00F04572 /* MyPay.m */; };
 		BFF85E73252A0C1A00F04572 /* MyPay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFF85E70252A0C1A00F04572 /* MyPay.h */; };
+		BFF85E7B252A0FC400F04572 /* libMyPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF85E7A252A0FC400F04572 /* libMyPay.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		BFF85E6D252A0C1A00F04572 /* libMyPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF85E70252A0C1A00F04572 /* MyPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPay.h; sourceTree = "<group>"; };
 		BFF85E71252A0C1A00F04572 /* MyPay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPay.m; sourceTree = "<group>"; };
+		BFF85E7A252A0FC400F04572 /* libMyPay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyPay.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF85E7B252A0FC400F04572 /* libMyPay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 			children = (
 				BFF85E70252A0C1A00F04572 /* MyPay.h */,
 				BFF85E71252A0C1A00F04572 /* MyPay.m */,
+				BFF85E7A252A0FC400F04572 /* libMyPay.a */,
 			);
 			path = MyPay;
 			sourceTree = "<group>";
@@ -245,6 +249,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyPay",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -256,6 +264,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyPay",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
