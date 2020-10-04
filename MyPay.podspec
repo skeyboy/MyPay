@@ -73,8 +73,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #spec.source_files  = "MyPay", "MyPay/**/*.{h,m}"
-  spec.exclude_files = "MyPay/**/*.{h.m}"
+  spec.source_files  = "MyPay", "MyPay/**/*.{h}"
+  spec.exclude_files = "MyPay/**/*.{m}"
   spec.vendored_libraries = "MyPay/*.a"
   # spec.public_header_files = "Classes/**/*.h"
 
